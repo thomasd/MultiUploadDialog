@@ -1,0 +1,4 @@
+# ignore mac files
+.DS_Store
+
+_build/config/example.config.php
