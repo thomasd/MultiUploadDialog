@@ -1,4 +1,4 @@
-MultiUploadDialog
+MultiUploadDialog Addon for MODx revolution
 =================
 
-An MODx addon replacing the outdated default upload dialog.
+A MODx addon replacing the outdated default upload dialog.

@@ -15,21 +15,17 @@ $components = array(
     /* These are used to define the package and set values for placeholders */
     'packageName' => 'MultiUploadDialog',  /* No spaces, no dashes */
     'packageNameLower' => $packageNameLower,
-    'packageDescription' => 'MultiUploadDialog project for MyComponent extra',
-    'version' => '0.0.2',
+    'packageDescription' => 'MultiUploadDialog replaces the outdated default upload dialog in MODx revolution without changing its code base.',
+    'version' => '1.0.0',
     'release' => 'beta',
     'author' => 'Thomas Dullnig',
-    // 'email' => '',
-    // 'authorUrl' => 'http://bobsguides.com',
-    // 'authorSiteName' => "Bob's Guides",
-    // 'packageDocumentationUrl' => 'http://bobsguides.com/multiuploaddialog-tutorial.html',
     'copyright' => '2014',
 
     /* no need to edit this except to change format */
     'createdon' => strftime('%m-%d-%Y'),
 
-    // 'gitHubUsername' => 'thomasd',
-    // 'gitHubRepository' => 'MultiUploadDialog',
+    'gitHubUsername' => 'thomasd',
+    'gitHubRepository' => 'MultiUploadDialog',
 
     /* two-letter code of your primary language */
     'primaryLanguage' => 'en',
