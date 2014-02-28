@@ -7,4 +7,4 @@ You can always go back to the default upload dialog by uninstalling the package 
 
 If you want to have the dialog translated in your language, send me pull requests. I will be more than happy to add them.
 
-Note that, for now, this is only tested with MODx revo 2.2.12 in newest Firefox, Chrome and Opera.
+Note that, for now, this is only tested with MODx revo 2.2.12 in newest Firefox, Chrome and Opera. But it should work back to 2.2.0.
