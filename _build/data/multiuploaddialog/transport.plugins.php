@@ -31,7 +31,9 @@ $plugins[1]->fromArray(array (
   'property_preprocess' => false,
   'name' => 'MultiUploadDialogInjector',
   'description' => 'This plugin replaces the default upload dialog with an enhanced multi-upload dialog, capable of multi file select and drag\'n\'drop.',
-  'properties' => NULL,
+  'properties' => 
+  array (
+  ),
   'disabled' => false,
 ), '', true, true);
 $plugins[1]->setContent(file_get_contents($sources['source_core'] . '/elements/plugins/multiuploaddialoginjector.plugin.php'));

@@ -23,13 +23,8 @@
     var maxFileSize = parseInt(MODx.config['upload_maxsize'], 10);
     var permittedFileTypes = MODx.config['upload_files'].toLowerCase().split(',');
 
-    // FileAPI.extend(FileAPI, {
-    //     debug: true   // debug mode, see Console
-    //     ,staticPath: '/assets/components/multiuploaddialog/libs/fileapi/' // path to '*.swf'
-    // });
-
-    FileAPI.debug = true;
-    FileAPI.staticPath = '/assets/components/multiuploaddialog/libs/fileapi/';
+    FileAPI.debug = false;
+    FileAPI.staticPath = MODx.config['assets_url'] + 'components/multiuploaddialog/libs/fileapi/';
 
     var api = {
         humanFileSize: function(bytes, si) {
@@ -55,7 +50,7 @@
         },
 
         isFileSizePermitted: function(size){
-            return (size <= parseInt(MODx.config['upload_maxsize'], 10));
+            return (size <= maxFileSize);
         },
 
         isFileTypePermitted: function(filename){
@@ -264,7 +259,8 @@
                         .get(function (err, img){
                             if(!err){
                                 img = new Ext.Element(img).setStyle('float', 'right');
-                                Ext.get(id).insertFirst(img);
+                                var el = Ext.get(id);
+                                el && el.insertFirst(img);
                             }
                         });
 

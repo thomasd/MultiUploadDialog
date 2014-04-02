@@ -34,10 +34,33 @@
  * @package multiuploaddialog
  **/
 
+if(!function_exists('add_lang_topic')){
+    function add_lang_topic($topic = 'multiuploaddialog:default', $prefix = 'multiuploaddialog'){
+        global $modx;
+        $modx->lexicon->load($topic);
+        $lang = $modx->lexicon->fetch($prefix);
+        if($lang){
+            //I HATE javascript code inside PHP strings!!!!!! Still I have to use it...cruel world!
+            $modx->regClientStartupHTMLBlock(
+                '<script>
+                    Ext.namespace("MODx.lang");
+                    Ext.applyIf(MODx.lang, ' . json_encode($lang) . ');
+                </script>'
+            );
+        }
+    }
+}
+
 switch($modx->event->name){
     case 'OnManagerPageBeforeRender':
+
         $modx->controller->addLexiconTopic('multiuploaddialog:default');
-        $modx->regClientStartupScript(MODX_ASSETS_URL . '/components/multiuploaddialog/libs/fileapi/FileAPI.min.js');
-        $modx->regClientStartupScript(MODX_ASSETS_URL . '/components/multiuploaddialog/js/multiuploaddialog-min.js');
+        $modx->regClientStartupScript(MODX_ASSETS_URL . 'components/multiuploaddialog/libs/fileapi/FileAPI.min.js');
+        $modx->regClientStartupScript(MODX_ASSETS_URL . 'components/multiuploaddialog/js/multiuploaddialog-min.js');
+
+        break;
+    case 'OnRichTextBrowserInit':
+        //MODx does not use modManagerController::addLexiconTopic for file-browser-view so we have to load the language topic manually.
+        add_lang_topic();
         break;
 }

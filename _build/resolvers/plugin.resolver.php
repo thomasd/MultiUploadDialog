@@ -75,6 +75,12 @@ if ($object->xpdo) {
                   'priority' => '0',
                   'propertyset' => '0',
                 ),
+                1 =>  array (
+                  'pluginid' => 'MultiUploadDialogInjector',
+                  'event' => 'OnRichTextBrowserInit',
+                  'priority' => '0',
+                  'propertyset' => '0',
+                ),
             );
 
             if (is_array($intersects)) {

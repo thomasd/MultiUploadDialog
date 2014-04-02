@@ -1,5 +1,13 @@
 Changelog for MultiUploadDialog
 
-MultiUploadDialog 1.0.0
+MultiUploadDialog 1.0.1-pl
+---------------------------------
+- [#2] Add French translation
+- [#3] Add Russion translation
+- [#5] Bugfix: Lexicon strings are now loaded on OnRichTextBrowserInit-Event
+- Code cleanup
+
+
+MultiUploadDialog 1.0.0-beta
 ---------------------------------
 Initial Version

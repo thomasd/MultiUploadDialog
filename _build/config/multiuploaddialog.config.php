@@ -16,8 +16,8 @@ $components = array(
     'packageName' => 'MultiUploadDialog',  /* No spaces, no dashes */
     'packageNameLower' => $packageNameLower,
     'packageDescription' => 'MultiUploadDialog replaces the outdated default upload dialog in MODx revolution without changing its code base.',
-    'version' => '1.0.0',
-    'release' => 'beta',
+    'version' => '1.0.1',
+    'release' => 'pl',
     'author' => 'Thomas Dullnig',
     'copyright' => '2014',
 
@@ -82,6 +82,7 @@ $components = array(
                 'static' => true,
                 'events' => array(
                     'OnManagerPageBeforeRender' => array(),
+                    'OnRichTextBrowserInit' => array()
                 ),
             ),
         ),
