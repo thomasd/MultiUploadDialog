@@ -1,6 +1,6 @@
 <?php
 /**
- * en default topic lexicon file for MultiUploadDialog extra
+ * it default topic lexicon file for MultiUploadDialog extra
  *
  * Copyright 2014 by Thomas Dullnig
  * Created on 02-27-2014
