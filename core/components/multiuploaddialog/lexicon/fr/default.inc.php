@@ -2,7 +2,7 @@
 /**
  * FR default topic lexicon file for MultiUploadDialog extra
  *
- * Copyright 2014 by Thomas Dullnig
+ * Copyright 2014 by rtripault (https://github.com/rtripault)
  * Created on 02-27-2014
  *
  * MultiUploadDialog is free software; you can redistribute it and/or modify it under the
