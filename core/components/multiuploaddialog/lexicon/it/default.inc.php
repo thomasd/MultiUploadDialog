@@ -2,8 +2,8 @@
 /**
  * it default topic lexicon file for MultiUploadDialog extra
  *
- * Copyright 2014 by Thomas Dullnig
- * Created on 02-27-2014
+ * Copyright 2014 by Alessandro Chinazzo
+ * Created on 04-15-2014
  *
  * MultiUploadDialog is free software; you can redistribute it and/or modify it under the
  * terms of the GNU General Public License as published by the Free Software
