@@ -2,7 +2,7 @@
 /**
  * ja default topic lexicon file for MultiUploadDialog extra
  *
- * Copyright 2014 by Thomas Dullnig
+ * Copyright 2014 by dokutoku (http://about.me/dokutoku/)
  * Created on 02-27-2014
  *
  * MultiUploadDialog is free software; you can redistribute it and/or modify it under the
