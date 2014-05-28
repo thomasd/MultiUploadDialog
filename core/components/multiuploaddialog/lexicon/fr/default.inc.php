@@ -24,7 +24,7 @@
 /**
  * Description
  * -----------
- * en default topic lexicon strings
+ * fr default topic lexicon strings
  *
  * Variables
  * ---------
