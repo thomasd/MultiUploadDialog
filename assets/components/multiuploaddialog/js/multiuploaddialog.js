@@ -21,7 +21,7 @@
 
 (function(){
     var maxFileSize = parseInt(MODx.config['upload_maxsize'], 10);
-    var permittedFileTypes = MODx.config['upload_files'].toLowerCase().split(',');
+    var permittedFileTypes = MODx.config['upload_files'].toLowerCase().split(',') + MODx.config['upload_images'].toLowerCase().split(',');
 
     FileAPI.debug = false;
     FileAPI.staticPath = MODx.config['assets_url'] + 'components/multiuploaddialog/libs/fileapi/';
